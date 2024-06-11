@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departures",
+  "info": {
+    "singularName": "departure",
+    "pluralName": "departures",
+    "displayName": "Время отправления"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "time",
+      "required": true,
+      "unique": true
+    },
+    "routes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::route.route",
+      "mappedBy": "departures"
+    }
+  }
+}
