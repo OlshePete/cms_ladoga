@@ -24,6 +24,10 @@
     },
     "content": {
       "type": "blocks"
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
     }
   }
 }

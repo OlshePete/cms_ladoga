@@ -881,6 +881,7 @@ export interface ApiContactContact extends Schema.SingleType {
     title: Attribute.String;
     summary: Attribute.Text;
     content: Attribute.Blocks;
+    phone_number: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
